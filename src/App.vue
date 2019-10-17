@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      Hi, I can change it
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <appHeader></appHeader>
     <router-view/>
   </div>
 </template>
+<script>
+  import appHeader from "./components/header";
 
+  export default {
+    name: 'home',
+    components: {
+      appHeader
+    }
+  }
+</script>
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
