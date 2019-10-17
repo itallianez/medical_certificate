@@ -16,3 +16,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+  .home {
+    background: #fa0;
+  }
+
+</style>
